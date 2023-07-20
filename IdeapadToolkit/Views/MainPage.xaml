@@ -80,39 +80,6 @@
                         </RadioButton.CommandParameter>
                     </RadioButton>
                 </ui:SimpleStackPanel>
-                <TextBlock
-                    Margin="0,0,0,0"
-                    FontSize="24"
-                    Text="Other" />
-                <ui:SimpleStackPanel Spacing="16">
-                    <StackPanel Orientation="Horizontal">
-                        <ui:ToggleSwitch
-                            Width="100"
-                            ui:ControlHelper.Header="Flip to Boot"
-                            IsEnabled="{Binding IsAdministrator}"
-                            IsOn="{Binding IsFlipToBootEnabled}" />
-                        <Button
-                            Padding="4"
-                            HorizontalAlignment="Left"
-                            VerticalAlignment="Center"
-                            Command="{Binding RestartAsAdminCommand}"
-                            Visibility="{Binding IsAdministrator, Converter={StaticResource InvBoolToVisConv}}">
-                            <Button.Content>
-                                <Image
-                                    Width="24"
-                                    Height="24"
-                                    Margin="0"
-                                    Source="/Resources/admin.png" />
-                            </Button.Content>
-                        </Button>
-                    </StackPanel>
-
-                    <ui:ToggleSwitch ui:ControlHelper.Header="Always on USB" IsOn="{Binding IsAlwaysOnUsbEnabled}" />
-                    <ui:ToggleSwitch
-                        ui:ControlHelper.Header="Always on USB on battery"
-                        IsEnabled="{Binding IsAlwaysOnUsbEnabled}"
-                        IsOn="{Binding IsAlwaysOnUsbBatteryEnabled}" />
-                </ui:SimpleStackPanel>
             </ui:SimpleStackPanel>
         </ScrollViewer>
     </Grid>
