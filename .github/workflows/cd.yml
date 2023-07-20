@@ -15,12 +15,12 @@ jobs:
     runs-on: windows-latest
 
     env:
-      App_Packages_Archive: IdeapadToolkit.zip
-      License_Path: IdeapadToolkit\Properties\PublishProfiles\3RD_PARTY_LICENSES.txt
+      App_Packages_Archive: LenovoToolkit.zip
+      License_Path: LenovoToolkit\Properties\PublishProfiles\3RD_PARTY_LICENSES.txt
       App_Publish_Directory: bin\Release\net6.0-windows\publish\win-x64
-      App_Project_Directory: IdeapadToolkit\
-      Solution_Path: IdeapadToolkit.sln
-      Project_Path: IdeapadToolkit\IdeapadToolkit.csproj
+      App_Project_Directory: LenovoToolkit\
+      Solution_Path: LenovoToolkit.sln
+      Project_Path: LenovoToolkit\LenovoToolkit.csproj
       Actions_Allow_Unsecure_Commands: true # Allows AddPAth and SetEnv commands
       Configuration: Release
       RuntimeIdentifier: win-x64
