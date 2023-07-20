@@ -2,6 +2,8 @@
 
 **Lenovo Toolkit is a utility that allows you adjust the power setting from Lenovo Vantage, without having to use the slow official app**
 
+_This fork removes the others section because the options in it did not seem to work correctly for me and changes name and branding to Lenovo Toolkit so that it fits with non ThinkPad laptops_
+
 ![image](screenshot.png)
 
 
